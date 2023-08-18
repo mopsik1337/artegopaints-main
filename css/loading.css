@@ -1,0 +1,38 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  }
+  
+  .spinner {
+    height: 3vh;
+    width: 3vh;
+    border: 6px solid #999;
+    border-top-color: #333;
+    border-radius: 100%;
+    animation: rotation 0.6s infinite linear 0.25s;
+  
+    /* the opacity is used to lazyload the spinner, see animation delay */
+    /* this avoid the spinner to be displayed when visible for a very short period of time */
+    opacity: 0;
+  }
+  
+  @keyframes rotation {
+    from {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(359deg);
+    }
+  }
