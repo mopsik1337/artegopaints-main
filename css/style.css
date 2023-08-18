@@ -1,3 +1,40 @@
 html, body {
     font-family: 'Century Gothic Regular';
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #D9D9D9;
+    text-align: center;
+    transition: .4s;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    padding: 4px auto;
+    background-color: #888888;
+  }
+  
+  .active {
+    color: #999;
+    cursor: not-allowed;
+  }
+.main {
+    text-align: center;
 }
