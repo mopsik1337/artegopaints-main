@@ -8,7 +8,7 @@
 <body>
     <div class="main">
         <div class="container">
-            <h3>Anti-robot</h3>
+            <h3>Sign in</h3>
             <p>Enter question:</p>
             <input type="text">
         </div>
