@@ -24,9 +24,11 @@
 
 html, body {
 	font-family: var(--inter);
-	background-color: var(--bg-main);
+	background-color: var(1--bg-main);
 	color: rgb(214, 214, 214);
 }
-.preloader {
-	margin: 0 auto;
+ .preloader1{
+margin-left:auto;
+margin-right:auto;
+float:center;
 }
