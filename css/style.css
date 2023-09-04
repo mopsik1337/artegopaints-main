@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Ubuntu&display=swap');
+
+:root {
+
+	/* FONTS */
+	--inter: 'Inter', sans-serif;
+	--fira: 'Fira Sans', sans-serif;
+	--ubuntu: 'Ubuntu', sans-serif;
+
+	/* COLORS */
+
+	--bg-main: #222222;
+	--second: #666666;
+
+	/* IMAGES */
+
+	--image-test: url('../assets/img/test.png');
+
+	/* ICONS */
+	--logo-svg: url('../assets/img/logo.svg');
+	--logo-png: url('../assets/img/logo.png');
+}
+
+html, body {
+	font-family: var(--inter);
+	background-color: var(--bg-main);
+	color: rgb(214, 214, 214);
+}
