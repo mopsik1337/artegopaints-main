@@ -1,0 +1,74 @@
+#preloader {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgba(214, 214, 214, 0.9);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+#preloader.hide-preloader {
+    animation: hidePreloader 1s;
+    overflow: hidden;
+}
+
+#preloader.preloader-hidden {
+    display: none;
+    overflow: hidden;
+}
+
+@keyframes hidePreloader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.ring__x {
+  overflow: hidden;
+  --uib-size: 40px;
+  --uib-speed: 2s;
+  --uib-color: black;
+  overflow: hidden;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  vertical-align: middle;
+  transform-origin: center;
+  animation: rotate var(--uib-speed) linear infinite;
+}
+
+.ring__x circle {
+  overflow: hidden;
+  fill: none;
+  overflow: hidden;
+  stroke: rgb(214, 214, 214);
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: stretch calc(var(--uib-speed) * 0.75) ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes stretch {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dashoffset: -124px;
+  }
+}
