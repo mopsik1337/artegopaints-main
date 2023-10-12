@@ -4,6 +4,19 @@
 html, body {
     font-family: 'Inter' !important;
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: #fb923c !important;
+  background: black !important;
+  background-color: black !important;
+}
+
+::selection {
+  color: #fb923c !important;
+  background: black !important;
+  background-color: black !important;
+}
+
 ::-webkit-scrollbar {
     scrollbar-color: #606060 #393939;
     scrollbar-width: thin;
